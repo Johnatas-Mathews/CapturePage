@@ -1,0 +1,138 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+/* Seleção de tudo da página */
+
+/* HEADER --> */
+
+body{  
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+}
+
+.container{
+    max-width: 1000px;
+    margin: auto;
+    }
+
+header{
+    background-color: #48C5CE;
+    color: white;
+    text-align: center;
+    padding: 10px;
+
+}
+.title{
+    font-size: 26px;
+}
+/* SECTION --> */
+.formContainer{
+    max-width: 230px;
+    background-color: #FFFFFFBB; /*Esse BB que finaliza a cor do formContainer é para dar transparencia no background*/
+    padding: 20px;
+    float: right;
+
+}
+
+section{ padding: 20px;
+    background-image: url(../Images/caption.jpg);
+    background-size: cover;
+    overflow: hidden;
+
+}
+
+h2{
+    font-size: 15px;
+}
+.mb{
+    margin-bottom: 15px;
+}
+
+/*input, select (faz a edição dos dois juntos, nessa forma de selação não há como editar apenas um tipo de tag)*/
+input, select{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    border: none;
+    margin-bottom: 10px;
+
+}
+#submit{
+    color: white;
+    background-color: #48C5CE;
+    font-weight: bold;
+}
+
+select{
+    -moz-appearance: none; /* Aparencia do bottom no Firefox - none= sem aparencia*/
+    -webkit-appearance: none; /* Aparencia do bottom no chrome e safari3 - none= sem aparencia*/
+    appearance: none; /* Aparencia do bottom em todos navegadores- none= sem aparencia*/
+    
+    background-image: url(../Images/st.png);
+    background-size: 10px;
+    background-repeat: no-repeat;
+    background-position: calc(100% - 10px) center;
+    
+}
+
+#submit:hover{
+    background: white;
+    color: #48C5CE;
+}
+
+/* FOOTER --> */
+footer{
+    background-color: #202121;
+    padding: 40px;
+    text-align: center;
+}
+
+.picture{
+    width: 230px;
+    border-radius: 8%;
+}
+
+
+.description{
+    color: white;
+    display: inline-block;
+    max-width: 40%; 
+    margin-left: 40px;
+    text-align: left;
+
+}
+
+.description p, .description h1{
+    margin-bottom: 20px;
+}
+
+/* MEDIA QUIRIRES */
+@media screen and (max-width: 595px) {
+    
+}
+
+@media screen and (max-width: 595px) {
+
+  
+       
+    
+    .description p {
+        font-size: 12px;
+        text-align: justify;
+    }
+    .description h1{
+        font-size: 25px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 480px){
+    
+    .description h1{
+        font-size: 20px;
+        text-align: center;
+    }
+} 
+
+
